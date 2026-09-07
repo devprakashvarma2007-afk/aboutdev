@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dev Prakash Varma — App Developer</title>
+<meta name="description" content="Dev Prakash Varma — App Developer & Digital Creator" />
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          bg: "#0a0a0a",
+          panel: "#121212",
+          line: "#262626",
+          ink: "#ededed",
+          mute: "#8a8a8a",
+          gold: "#d4a537",
+        },
+        fontFamily: {
+          mono: ["'JetBrains Mono'", "monospace"],
+          sans: ["Inter", "sans-serif"],
+        },
+      },
+    },
+  };
+</script>
+
+<style>
+  html { scroll-behavior: smooth; }
+  body { background-color: #0a0a0a; }
+  ::selection { background: #d4a537; color: #0a0a0a; }
+
+  .reveal { opacity: 0; transform: translateY(14px); transition: opacity .6s ease, transform .6s ease; }
+  .reveal.in { opacity: 1; transform: translateY(0); }
+
+  @media (prefers-reduced-motion: reduce) {
+    html { scroll-behavior: auto; }
+    .reveal { transition: none; opacity: 1; transform: none; }
+  }
+
+  a:focus-visible, button:focus-visible {
+    outline: 2px solid #d4a537; outline-offset: 2px;
+  }
+</style>
+</head>
+
+<body class="bg-bg text-ink font-sans antialiased">
+
+  <!-- Minimal header -->
+  <header class="px-6 md:px-16 pt-14 pb-6">
+    <p class="font-mono text-xs text-mute mb-2">whoami</p>
+    <h1 class="text-2xl sm:text-3xl font-sans font-bold tracking-tight text-ink">Dev Prakash Varma</h1>
+    <p class="font-mono text-sm text-gold mt-1">App Developer &amp; Digital Creator</p>
+  </header>
+
+  <main class="px-6 md:px-16 max-w-2xl">
+
+    <!-- ABOUT -->
+    <section id="about" class="py-12 border-t border-line reveal">
+      <p class="font-mono text-xs text-mute mb-5">about.md</p>
+      <p class="text-mute leading-relaxed text-[15px] sm:text-base">
+        I'm a student from Bihar, India, currently focused on a genuine passion for technology and
+        app development. Alongside my studies, I spend most of my time learning how software works,
+        experimenting with Android development, and building small projects. This curiosity is what
+        I now bring into coding and building apps.
+      </p>
+    </section>
+
+    <!-- MELODY MUSIC -->
+    <section id="project" class="py-12 border-t border-line reveal">
+      <p class="font-mono text-xs text-mute mb-5">melody-music.app</p>
+
+      <div class="border border-line bg-panel p-6 sm:p-8">
+        <div class="flex items-start justify-between flex-wrap gap-3 mb-4">
+          <div>
+            <h2 class="text-xl font-sans font-bold text-ink">Melody Music</h2>
+            <p class="text-mute text-sm mt-1">Music streaming &amp; downloading app</p>
+          </div>
+          <span class="font-mono text-xs text-gold border border-gold/40 px-3 py-1 whitespace-nowrap">in development</span>
+        </div>
+        <p class="text-mute leading-relaxed text-[15px] sm:text-base">
+          My latest project — an Android app built for a seamless way to stream music online and
+          download it for offline listening, without the clutter most music apps carry around.
+        </p>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="py-12 border-t border-line reveal">
+      <p class="font-mono text-xs text-mute mb-5">contact.sh</p>
+
+      <a href="mailto:melodymusicsupport@gmail.com"
+         class="inline-block font-mono text-base sm:text-lg text-ink border-b border-gold pb-1 hover:text-gold transition-colors mb-8">
+        melodymusicsupport@gmail.com
+      </a>
+
+      <div class="flex items-center gap-4">
+        <a href="https://github.com/devprakashvarma2007-afk" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="w-10 h-10 border border-line flex items-center justify-center hover:border-gold hover:text-gold text-mute transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-3.16 19.49c.5.09.68-.22.68-.48v-1.7c-2.78.6-3.37-1.34-3.37-1.34-.46-1.16-1.11-1.47-1.11-1.47-.9-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.9 1.52 2.34 1.08 2.91.83.09-.65.35-1.08.63-1.33-2.22-.25-4.56-1.11-4.56-4.95 0-1.1.39-1.99 1.03-2.69-.1-.25-.45-1.27.1-2.64 0 0 .84-.27 2.75 1.02a9.4 9.4 0 0 1 5 0c1.91-1.3 2.75-1.02 2.75-1.02.55 1.37.2 2.39.1 2.64.64.7 1.03 1.59 1.03 2.69 0 3.85-2.34 4.7-4.57 4.94.36.31.68.92.68 1.85v2.75c0 .26.18.58.69.48A10 10 0 0 0 12 2Z"/></svg>
+        </a>
+        <a href="https://www.linkedin.com/in/dev-prakash-varma-4884833ab/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn" class="w-10 h-10 border border-line flex items-center justify-center hover:border-gold hover:text-gold text-mute transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M6.94 5a2 2 0 1 1-4-.002 2 2 0 0 1 4 .002ZM7 8.48H3V21h4V8.48Zm6.32 0H9.34V21h3.94v-6.57c0-3.66 4.77-3.96 4.77 0V21H22v-7.93c0-6.17-6.98-5.94-8.68-2.91V8.48Z"/></svg>
+        </a>
+        <a href="https://www.instagram.com/devinn.py/" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="w-10 h-10 border border-line flex items-center justify-center hover:border-gold hover:text-gold text-mute transition-colors">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.2" cy="6.8" r="1"/></svg>
+        </a>
+      </div>
+    </section>
+
+    <footer class="py-10 font-mono text-xs text-mute">
+      Dev Prakash Varma
+    </footer>
+
+  </main>
+
+<script>
+  const revealObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("in");
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    },
+    { threshold: 0.15 }
+  );
+  document.querySelectorAll(".reveal").forEach((el) => revealObserver.observe(el));
+</script>
+
+</body>
+</html>
